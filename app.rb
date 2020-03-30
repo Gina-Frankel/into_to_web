@@ -7,22 +7,23 @@ get '/' do
   "Hello!"
 end
 
-get '/secret' do 
+get '/secret' do
   " can't tell you "
-end 
+end
 
-get '/greeting' do 
+get '/greeting' do
   " goodbye "
-end 
+end
 
 get '/secret/very_secret' do
   "still won't tell you"
-end 
+end
 
 get '/animal' do
   "dog"
-end 
+end
 
 get '/cat' do
+  @cat_name = ["Ruby", "Chairman Meow", "Catrina"].sample
   erb(:index)
-end 
+end
